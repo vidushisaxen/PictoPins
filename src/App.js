@@ -1,24 +1,65 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Body from './components/Body';
+import Explore from './components/Explore';
+import Create from './components/Create';
+import Notification from './components/Notification';
+import Chats from './components/Chats';
+import Profile from './components/Profile';
+import More from './components/More';
+import Footer from './components/Footer';
+import EditProfile from './components/EditProfile';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
+import Account from './components/Account';
+import Visibility from './components/Visibility';
+import TuneHome from './components/TuneHome';
+import Claimed from './components/Claimed';
+import Social from './components/Social';
+import Notify from './components/Notify';
+import Privacy from './components/Privacy';
+import Security from './components/Security';
+import Branded from './components/Branded';
+import Left from './components/Left';
+import Share from './components/Share';
+import ViewPin from './components/ViewPin';
+import Trial from './components/Trial';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path = '/'element = {[<Header/>, <Body/>]}/>
+      <Route path = '/Home' element = {[<Header/>, <Body/>]}/>
+      <Route path = '/Explore' element = {[<Header/>,<Explore/>]}/>
+      <Route path = '/Create' element = {[<Header/>,<Create/>]}/>
+      <Route path = '/Notification' element = {[<Header/>,<Body/>]}/>
+      <Route path = '/Chats' element = {[<Header/>,<Chats/>]}/>
+      <Route path = '/Profile' element = {[<Header/>,<Profile/>]}/>
+      <Route path = '/More' element = {[<Header/>,<More/>]}/>
+      <Route path = '/EditProfile' element = {[<Header/>,<EditProfile/>,<Footer/>]}/>
+      <Route path = '/Account' element = {[<Header/>,<Account/>,<Footer/>]}/>
+      <Route path = '/Visibility' element = {[<Header/>,<Visibility/>,<Footer/>]}/>
+      <Route path = '/TuneHome' element = {[<Header/>,<TuneHome/>,<Footer/>]}/>
+      <Route path = '/Claimed' element = {[<Header/>,<Claimed/>,<Footer/>]}/>
+      <Route path = '/Social' element = {[<Header/>,<Social/>,<Footer/>]}/>
+      <Route path = '/Notify' element = {[<Header/>,<Notify/>,<Footer/>]}/>
+      <Route path = '/Privacy' element = {[<Header/>,<Privacy/>,<Footer/>]}/>
+      <Route path = '/Security' element = {[<Header/>,<Security/>,<Footer/>]}/>
+      <Route path = '/Branded' element = {[<Header/>,<Branded/>,<Footer/>]}/>
+      <Route path = '/Share' element = {[<Header/>,<Share/>]}/>
+      <Route path = '/ViewPin' element = {[<Header/>,<ViewPin/>]}/>
+      <Route path = '/Trial' element={[<Header/>,<Trial/>]}/>
+      
+    
+    
+    
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
