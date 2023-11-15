@@ -76,7 +76,7 @@ const Trial = () => {
           setPhotos(photoArray);
         }
       });
-  }, []); // Run this effect only once, on component mount
+  }, []); 
 
   return (
     <>
