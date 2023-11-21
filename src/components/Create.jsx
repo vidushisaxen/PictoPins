@@ -15,8 +15,6 @@ const Create = () => {
       <p>The saved drafts if not posted will get deleted within 30 days.</p>
       <Link to='/Trial'><button>Create</button></Link>
      
-
-    
     </div>
     </>
     
