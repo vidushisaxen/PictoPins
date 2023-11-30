@@ -24,6 +24,13 @@ import Left from './components/Left';
 import Share from './components/Share';
 import ViewPin from './components/ViewPin';
 import Trial from './components/Trial';
+import Signedin from './components/Signedin';
+import Windows from './components/Windows';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Help from './components/Help';
+import Service from './components/Service';
+import Tester from './components/Tester';
+import Logout from './components/Logout';
 
 
 
@@ -53,6 +60,14 @@ function App() {
       <Route path = '/Share' element = {[<Header/>,<Share/>]}/>
       <Route path = '/ViewPin' element = {[<Header/>,<ViewPin/>]}/>
       <Route path = '/Trial' element={[<Header/>,<Trial/>]}/>
+      <Route path = '/Signedin' element={[<Header/>,<Signedin/>]}/>
+      <Route path = '/Windows' element={[<Header/>,<Windows/>]}/>
+      <Route path = '/PrivacyPolicy' element={[<Header/>,<PrivacyPolicy/>]}/>
+      <Route path = '/Help' element={[<Header/>,<Help/>]}/>
+      <Route path = '/Service' element={[<Header/>,<Service/>]}/>
+      <Route path = '/Tester' element={[<Header/>,<Tester/>]}/>
+      <Route path = '/Logout' element={[<Header/>,<Logout/>]}/>
+
       
     
     
