@@ -78,15 +78,17 @@
   background-color: red;
   color: white;
   border: none;
-  height: 30px;
-  width: 100px;
-  margin-left: 30%;
+  /* height: 30px; */
+  /* width: 100px; */
+  /* margin-left: 30%; */
   border-radius: 5px;
   outline: none;
   position:relative ;
-  left: 90px;
+  margin-top: 10px;
+  /* left: 90px; */
   top: -10px;
   cursor: pointer;
+  padding: 10px;
   /* margin-left: 25%; */
   /* margin-bottom: 10%; */
 }
@@ -94,6 +96,12 @@
     color: red;
     background-color: white;
     border: 2px solid red;
+}
+.home-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .wall{
     display: flex;
@@ -266,7 +274,7 @@
     padding: 5px;
 }
 
-.edit{
+.edit, .tune{
     display: flex;
     flex-direction: row;
 }

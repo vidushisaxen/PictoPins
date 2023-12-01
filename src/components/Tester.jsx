@@ -28,6 +28,8 @@ function Tester() {
     </div>
     <div className="right">
         <h2>Tester</h2>
+        <p>To be a Pinterest Beta Tester, please visit :</p>
+        <a href='https://in.pinterest.com/public-beta/' target='_main'><button>View</button></a>
         
     </div>
     </div>

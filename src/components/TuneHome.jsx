@@ -30,6 +30,11 @@ const TuneHome = () => {
 
         </ul>
     </div>
+    <div className="right">
+      <h2>Tune your home feed</h2>
+      <p>Make your Pinterest more you. Edit the details Pinterest uses to recommend ideas to you. These details won’t be shown publicly.</p>
+      
+    </div>
     </div>
     </>
   )

@@ -28,6 +28,8 @@ function Logout() {
     </div>
     <div className="right">
         <h2>Logout</h2>
+        <p> To Log out of Current Session:</p>
+        <button>Logout</button>
         
     </div>
    </div>

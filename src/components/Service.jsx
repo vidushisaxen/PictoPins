@@ -28,6 +28,8 @@ function Service() {
     </div>
     <div className="right">
         <h2>Service</h2>
+        <p>To get to know more about terms of service please visit Sevice Centre.</p>
+        <a href='https://policy.pinterest.com/en/terms-of-service' target='_main'><button>Service Centre</button></a>
         
     </div>
     </div>

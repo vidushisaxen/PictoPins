@@ -28,6 +28,10 @@ const More = () => {
       </ul>
 
     </div>
+    <div className="right">
+        <h2>Currently signed in as:</h2>
+        <h3>Vidushi Saxena</h3>
+    </div>
     </div>
 
     

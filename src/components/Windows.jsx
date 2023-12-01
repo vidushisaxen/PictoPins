@@ -27,7 +27,8 @@ function Windows() {
 
     </div>
     <div className="right">
-        <h2>Windows</h2>
+        <h2>Windows App</h2>
+        <p>To get the Pinterest Windows App , please visit Microsoft Store.</p>
         
     </div>
    </div>

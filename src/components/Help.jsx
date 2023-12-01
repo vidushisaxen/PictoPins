@@ -28,6 +28,8 @@ function Help() {
     </div>
     <div className="right">
         <h2>Help</h2>
+        <p>To get help regarding your pinterest account and any other terms and condition please visit the Help Centre.</p>
+        <a href='https://help.pinterest.com/en?source=gear_menu_web' target='_main'><button>Help Centre</button></a>
         
     </div>
     </div>

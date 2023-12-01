@@ -38,7 +38,9 @@ function view(image,title,subtitle){
         <div className='card'  onClick={()=>view(photo.url, photo.alt, photo.photographer)}key={index}>
           <img src={photo.url} alt={photo.alt} />
           <p className='maintext'>{photo.alt}</p>
-          <button className='viewbtn'>View</button>
+          <span className='home-buttons'><button className='viewbtn'>Add to Collections</button>
+          <button className='viewbtn'>View</button></span>
+          
         </div>
       ))}
     </div>

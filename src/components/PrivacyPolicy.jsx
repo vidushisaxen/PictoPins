@@ -28,6 +28,8 @@ function PrivacyPolicy() {
     </div>
     <div className="right">
         <h2>Privacy Policy</h2>
+        <p>To visit Privacy Policy visit the page below.</p>
+        <a href='https://policy.pinterest.com/en/privacy-policy' target='_main'><button>View</button></a>
         
     </div>
    </div>
