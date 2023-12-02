@@ -30,6 +30,7 @@ function view(image,title,subtitle){
   navigate('/ViewPin',{state:{id:1,ima:image,tit:title,sub:subtitle}})
 
 }
+
 //  onClick={()=>view(url, url.alt, url.photographer)} key={url.id}
   return (
     <>
