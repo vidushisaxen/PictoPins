@@ -11,6 +11,7 @@ const Body = () => {
   const [photos, setPhotos] = useState([]);
     const[state, setState] = useState([]);
     const[res, setRes] = useState([]);
+    
 
     useEffect(() => {
       client.photos.search({ query, per_page: 100 }) // Request up to 100 photos
