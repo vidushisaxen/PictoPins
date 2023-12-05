@@ -11,7 +11,7 @@ const Body = () => {
   const [photos, setPhotos] = useState([]);
     const[state, setState] = useState([]);
     const[res, setRes] = useState([]);
-    
+
 
     useEffect(() => {
       client.photos.search({ query, per_page: 100 }) // Request up to 100 photos
@@ -26,6 +26,7 @@ const Body = () => {
         });
     }, []);
 
+    
 const navigate = useNavigate();
 function view(image,title,subtitle){
   navigate('/ViewPin',{state:{id:1,ima:image,tit:title,sub:subtitle}})
