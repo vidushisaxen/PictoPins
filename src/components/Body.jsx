@@ -26,7 +26,7 @@ const Body = () => {
         });
     }, []);
 
-    
+
 const navigate = useNavigate();
 function view(image,title,subtitle){
   navigate('/ViewPin',{state:{id:1,ima:image,tit:title,sub:subtitle}})
@@ -34,6 +34,7 @@ function view(image,title,subtitle){
 }
 
 //  onClick={()=>view(url, url.alt, url.photographer)} key={url.id}
+
   return (
     <>
     <div className='wall'>
