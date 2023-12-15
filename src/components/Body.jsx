@@ -27,6 +27,7 @@ const Body = () => {
         });
     }, []);
 
+    
 
 const navigate = useNavigate();
 function view(image,title,subtitle){
