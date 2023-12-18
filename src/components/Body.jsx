@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import axios from 'axios'
+import axios from 'axios';
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { createClient } from 'pexels';
@@ -27,7 +27,7 @@ const Body = () => {
         });
     }, []);
 
-    
+
 
 const navigate = useNavigate();
 function view(image,title,subtitle){
