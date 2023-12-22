@@ -11,7 +11,9 @@ const ViewPin = () => {
        </div>
        <div className='right'>
          <h2>{location.state.tit}</h2>
-         <p>{location.state.sub}</p>
+         {/* <p>{location.state.sub}</p> */}
+         <h2> Photographed by :</h2>
+         <p>{location.state.grapher}</p>
        </div>
     </div>
     </>

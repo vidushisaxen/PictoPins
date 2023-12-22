@@ -15,14 +15,15 @@ const Body = () => {
 
 
     useEffect(() => {
-      client.photos.search({ query, per_page: 100 }) // Request up to 100 photos
+      client.photos.search({ query, per_page: 100 }) 
         .then(photosData => {
           if (photosData && photosData.photos && photosData.photos.length > 0) {
-            const photoArray = photosData.photos.slice(0, 100).map(photo => ({ // Limit to the first 100 photos
+            const photoArray = photosData.photos.slice(0, 100).map(photo => ({ 
               url: photo.src.original,
               alt: photo.alt,
             }));
             setPhotos(photoArray);
+            console.log(photosData);
           }
         });
     }, []);
@@ -30,8 +31,8 @@ const Body = () => {
 
 
 const navigate = useNavigate();
-function view(image,title,subtitle){
-  navigate('/ViewPin',{state:{id:1,ima:image,tit:title,sub:subtitle}})
+function view(image,title,name){
+  navigate('/ViewPin',{state:{id:1,ima:image,tit:title,grapher:name}})
 
 }
 
