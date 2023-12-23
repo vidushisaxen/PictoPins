@@ -29,7 +29,6 @@ const Body = () => {
     }, []);
 
 
-
 const navigate = useNavigate();
 function view(image,title,name){
   navigate('/ViewPin',{state:{id:1,ima:image,tit:title,grapher:name}})
