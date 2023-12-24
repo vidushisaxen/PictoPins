@@ -21,17 +21,19 @@ const Body = () => {
             const photoArray = photosData.photos.slice(0, 100).map(photo => ({ 
               url: photo.src.original,
               alt: photo.alt,
+              photographer:photo.photographer,
             }));
             setPhotos(photoArray);
             console.log(photosData);
+
           }
         });
     }, []);
 
 
 const navigate = useNavigate();
-function view(image,title,name){
-  navigate('/ViewPin',{state:{id:1,ima:image,tit:title,grapher:name}})
+function view(image,title,names){
+  navigate('/ViewPin',{state:{id:1,ima:image,grapher:names,tit:title}})
 
 }
 
@@ -41,7 +43,8 @@ function view(image,title,name){
     <>
     <div className='wall'>
       {photos.map((photo, index) => (
-        <div className='card'  onClick={()=>view(photo.url, photo.alt, photo.photographer)}key={index}>
+        <div className='card'  onClick={()=>view(photo.url, photo.alt, photo.photographer
+          )}key={index}>
           <img src={photo.url} alt={photo.alt} />
           <p className='maintext'>{photo.alt}</p>
           <span className='home-buttons'><button className='viewbtn'>Add to Collections</button>
