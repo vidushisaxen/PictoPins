@@ -22,6 +22,7 @@ const Body = () => {
               url: photo.src.original,
               alt: photo.alt,
               photographer:photo.photographer,
+              photographer_url: photo.photographer_url
             }));
             setPhotos(photoArray);
             console.log(photosData);
@@ -32,8 +33,8 @@ const Body = () => {
 
 
 const navigate = useNavigate();
-function view(image,title,names){
-  navigate('/ViewPin',{state:{id:1,ima:image,grapher:names,tit:title}})
+function view(image,title,names,url){
+  navigate('/ViewPin',{state:{id:1,ima:image,grapher:names,tit:title, links:url}})
 
 }
 
@@ -43,7 +44,7 @@ function view(image,title,names){
     <>
     <div className='wall'>
       {photos.map((photo, index) => (
-        <div className='card'  onClick={()=>view(photo.url, photo.alt, photo.photographer
+        <div className='card'  onClick={()=>view(photo.url, photo.alt, photo.photographer, photo.photographer_url
           )}key={index}>
           <img src={photo.url} alt={photo.alt} />
           <p className='maintext'>{photo.alt}</p>
