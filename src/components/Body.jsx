@@ -15,10 +15,10 @@ const Body = () => {
 
 
     useEffect(() => {
-      client.photos.search({ query, per_page: 100 }) 
+      client.photos.search({ query, per_page: 200 }) 
         .then(photosData => {
           if (photosData && photosData.photos && photosData.photos.length > 0) {
-            const photoArray = photosData.photos.slice(0, 100).map(photo => ({ 
+            const photoArray = photosData.photos.slice(0, 200).map(photo => ({ 
               url: photo.src.original,
               alt: photo.alt,
               photographer:photo.photographer,
