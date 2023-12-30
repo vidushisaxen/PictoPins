@@ -9,17 +9,10 @@ import {PiMagnifyingGlassFill} from 'react-icons/pi'
 import Explore from './Explore';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import SearchBar from './SearchBar';
 
 const Header = () => {
-  const[search,setSearch] =  useState("");
-
-  const searchonChange = (event)=>{
-   setSearch(event.target.value);
-  }
-
-  const onSearch =(keyword)=>{
-  console.log('search ' , keyword);
-  }
+  
   return (
 
     <>
@@ -29,8 +22,12 @@ const Header = () => {
     <Link to = '/Home' className='link'><h2>Home</h2></Link>
     <Link to = '/Explore' className='link'><h2>Explore</h2></Link>
     <Link to = '/Create' className='link'><h2>Create</h2></Link> 
-    <input placeholder='Search ideas' type= " text" value={search} onChange={searchonChange}></input>
-    <button className='searchbutton' onClick={()=>onSearch(search)}>Search</button>
+    {/*{ }*/}
+    <div className='search-bar-conatiner'>
+    <SearchBar/>
+    {/* <div>Serach Results</div> */}
+    </div>
+    
     <Link to = '/Notification' className='link'><p className='icon'><PiNotificationBold size={27}/></p></Link>
     <Link to = '/Chats' className='link'><p className='icon'><BiMessageDetail size={27}/></p></Link>
     <Link to = '/Profile' className='link'><p className='icon'><MdOutlineSwitchAccount size={27}/></p></Link>
