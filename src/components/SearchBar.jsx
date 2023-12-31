@@ -43,7 +43,6 @@ const SearchBar = () => {
     
   return (
    <>
-   
    <div className='input-container'>
     <span className='search-input-icon'>
    <FaSearch className='search-icon'/>
