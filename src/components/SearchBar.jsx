@@ -60,6 +60,7 @@ const SearchBar = () => {
     )
    })}
    
+   
 
    </div>
    </>
