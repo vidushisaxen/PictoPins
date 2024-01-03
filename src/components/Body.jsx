@@ -8,6 +8,7 @@ import { createClient } from 'pexels';
 
 const client= createClient('RVmM2HHzYaGJZQl867MKhDLmY4IYFlek3gc17BxbJAN8FOKNJtLb4gHE')
 const query = 'Nature';
+
 const Body = () => {
   const [photos, setPhotos] = useState([]);
     const[data, setData] = useState([]);
