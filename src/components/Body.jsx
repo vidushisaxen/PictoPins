@@ -24,9 +24,9 @@ const Body = () => {
               photographer:photo.photographer,
               photographer_url: photo.photographer_url
             }));
+
             setPhotos(photoArray);
             console.log(photosData);
-
           }
         });
     }, []);
