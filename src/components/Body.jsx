@@ -37,11 +37,8 @@ function view(image,title,names,url){
   navigate('/ViewPin',{state:{id:1,ima:image,grapher:names,tit:title, links:url}})
 }
 
-function addtocollections(){
-    
+function addtocollections(){   
 }
-
-
   return (
     <>
     <div className='wall'>
