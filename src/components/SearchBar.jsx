@@ -6,7 +6,6 @@ import SearchData from './SearchData';
 import { createClient } from 'pexels';
 
 
-
 const client= createClient('RVmM2HHzYaGJZQl867MKhDLmY4IYFlek3gc17BxbJAN8FOKNJtLb4gHE')
     const query = 'Nature';
 
@@ -60,7 +59,7 @@ const SearchBar = () => {
     )
    })}
    
-   
+
 
    </div>
    </>
