@@ -20,7 +20,6 @@ const SearchBar = () => {
             if (photosData && photosData.photos && photosData.photos.length > 0) {
               const photoArray = photosData.photos.slice(0, 200).map(photo => ({ 
                 alt: photo.alt,
-
               }));
               setPhotos(photoArray);
              
