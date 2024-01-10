@@ -26,8 +26,6 @@ const EditProfile = () => {
            <Link to='/Security' className='link'><li>Security</li></Link>
         
            <Link to='/Branded' className='link'><li>Branded Content</li></Link>
-           
-
         </ul>
     </div>
     <div className='right'>
